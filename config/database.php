@@ -63,6 +63,8 @@ return [
             ]) : [],
         ],
 
+
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
@@ -91,6 +93,40 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'sqlsrvgenealogy' => [
+            'driver' => 'sqlsrv',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST_genealogy', 'localhost'),
+            'port' => env('DB_PORT_genealogy', '1433'),
+            'database' => env('DB_DATABASE_genealogy', 'forge'),
+            'username' => env('DB_USERNAME_genealogy', 'forge'),
+            'password' => env('DB_PASSWORD_genealogy', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
+         'sqlsrv4' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST_GenealogyID', 'localhost'),
+            'port' => env('DB_PORT_GenealogyID', '1433'),
+            'database' => env('DB_DATABASE_GenealogyID', 'forge'),
+            'username' => env('DB_USERNAME_GenealogyID', 'forge'),
+            'password' => env('DB_PASSWORD_GenealogyID', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
+         'sqlsrvtop' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST_top', 'localhost'),
+            'port' => env('DB_PORT_top', '1433'),
+            'database' => env('DB_DATABASE_top', 'forge'),
+            'username' => env('DB_USERNAME_top', 'forge'),
+            'password' => env('DB_PASSWORD_top', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
     ],
 
     /*

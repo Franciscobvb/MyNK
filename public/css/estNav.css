@@ -1,19 +1,35 @@
-.nav{
-	height: 550px !important;
-}
 
 .img{
-	opacity: 0.4 !important;
+	opacity: 0.4;
 	background-color:#0aa6b6 !important;
 }
+ #text {
+                   
+    color: black;
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.ver:hover > #text{
+    display: block;
+}
+.ver:hover >img{
+    opacity: 0.1;
+}
+
 .ul-header{
 	position: relative; 
 	left:17%;
 }
+
 .li_perfil{
-	margin-right: 10px !important; 
-	margin-top: 10px;
-	margin-right: -20px;
+	height: 40px;
+	padding-top:5px; 
 }
 .li_options_header{
 	margin-right: -15px;
@@ -37,6 +53,21 @@
 	top: 8px;
 	margin-right:5px;
 }
+.icon-country{
+	height: 35px; 
+	width: 35px; 
+	position: relative; 
+	top: -5px;
+	margin-right:5px;
+}
+.icon-home{
+	height: 45px; 
+	width: 45px; 
+	position: relative; 
+	top: 16px;
+	left: 5px;
+	margin-right:5px;
+}
 .section-gallery{
 	margin-top: 40px; 
 	display: table; 
@@ -52,8 +83,7 @@
 }
 .gallery-est{
 	display: table-cell; 
-	width: 30% !important; 
-	margin-left: 45px !important;
+	width: 32% !important; 
 }
 #img-incentive{
 	width:100%;
@@ -61,14 +91,14 @@
 .color-taxt-tap{
 	color: :#0aa6b6 !important;
 }
+
 .table-space{
 	display: table-cell;
-	 width: 2%;
+	 width:3%;
 }
 .table-tabs{
 	display: table-cell;
-	width: 45% !important;  
-	display: table-cell;
+	width: 75% !important;  
 }
 .nav-opacity{
 	background-color:#0aa6b6 !important;
@@ -90,4 +120,127 @@
 }
 .a-ho:hover{
 	color: #0aa6b6 !important;
+}
+
+.page-footer{
+	padding-top:20px;
+	color:#fff;
+	background-color:#448AFF;
+}
+
+.page-footer .footer-copyright{
+	overflow:hidden;
+	min-height:50px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:10px 0px;
+	color:rgba(255,255,255,0.8);
+	background-color:rgba(51,51,51,0.08);
+}
+.page-footer{background-color:#fff;
+	border-top:1px solid #e0e0e0;
+	color:#444;padding:40px 0;
+	margin:0;
+}
+.page-footer .row{margin:0;}
+.page-footer .materialize-logo{margin-top:2px;}
+.page-footer p{margin:5px 0;}
+.page-footer ul li{margin-bottom:5px;}
+.page-footer ul li a,.page-footer p{color:#999;
+	font-size:.8rem;
+	font-weight:300;
+	margin:5px 0;
+}
+
+@media screen and (max-width:1210px) and (min-width: 841px) {
+	
+.section-gallery{
+	margin-top: 40px; 
+	display: block; 
+	width: 100% !important;
+}
+.container-gallery{
+	display: block; 
+	width: 98% !important;
+}
+.gallery-est{
+	display: block; 
+	width: 90% !important; 
+	margin-left: 45px !important;
+}
+.table-space{
+	display: block;
+	 width: 2%;
+	 height: 10px;
+}
+.table-tabs{
+	width: 90% !important;  
+	display: block;
+}
+.cont-cat{
+	width: 100%;
+}
+li a{
+	font-size: 13px !important;
+}
+
+
+}
+
+
+@media screen and (max-width:840px) {
+  .section-gallery{
+	margin-top: 40px; 
+	display: block; 
+	width: 100% !important;
+}
+.container-gallery{
+	display: block; 
+	width: 98% !important;
+
+}
+.gallery-est{
+	display: block; 
+	width: 90% !important; 
+	margin-left: 45px !important;
+	position: relative !important; 
+	right: 30px !important;
+}
+table-space{
+	display: block;
+	 width: 2%;
+	 height: 10px;
+}
+.table-tabs{
+	width: 90% !important;  
+	display: block;
+}
+.modal-pwp{
+	width: 99%;
+}
+
+/*#text {
+  background-color: rgba(255,255,255,.8);
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  padding: 5px;
+  width: 100%;
+}*/
+ #text {                  
+    color: black;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.ver >img{
+    opacity: 0.4;
+}
 }

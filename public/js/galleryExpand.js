@@ -15,6 +15,7 @@
       var defaults = {
         inDuration: 300, // ms
         outDuration: 200, // ms
+        dismissible:false,
         responsiveThreshold: 992, // breakpoint for full width style
         contentPadding: 40, // Padding for content in Custom Modal
         onShow: null, // callback
@@ -313,11 +314,11 @@
             overlay = $('<div id="placeholder-overlay"></div>');
             placeholder.prepend(overlay);
           }
-          overlay
+         /* overlay
             .off('click.galleryExpand')
             .on('click.galleryExpand', function() {
               returnToOriginal();
-            })
+            })*/
           if (fillScreen) {
             overlay
               .off('mouseenter.galleryExpand')
@@ -337,9 +338,9 @@
           var navbar = $('<nav id="placeholder-navbar"></nav>');
           var navWrapper = $('<div class="nav-wrapper"></div>');
           var container = $('<div class="container"></div>');
-          var backBtn = $('<button class="back-btn"><i class="material-icons">arrow_back</i><span>Back</span></button>');
+          var backBtn = $('<button class="back-btn"><i class="material-icons">arrow_back</i><span style="color:black;"><img src="">Back</span></button>');
           var originalNavColor = '';
-          if ($('nav').length) {
+         if ($('nav').length) {
             originalNavColor = $('nav').css('background-color');
             $('nav').addClass('fadeOut');
           }

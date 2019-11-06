@@ -9,6 +9,7 @@
       constrainWidth: false
     });
 
+   
 
     // Navbar
     var categories = $('nav .categories-container');
@@ -23,7 +24,9 @@
           var hash = $link.find('a').first()[0].hash.substr(1);
           var $galleryItems = $('.gallery .gallery-item');
 
+
           $galleryItems.stop().addClass('gallery-filter').fadeIn(100);
+
 
           if (hash !== 'all') {
             var $galleryFilteredOut = $galleryItems.not('.' + hash).not('.all');
@@ -47,7 +50,7 @@
         });
       });
     }
-
+    
 
     // Home
     $('.carousel:not(.carousel-slider)').carousel({
